@@ -4,7 +4,6 @@
    
     <!-- Initialize the viewport -->
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-   
     <!-- Load the required dependencies: A-frame and AR.js -->
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     
@@ -33,14 +32,11 @@
     <!-- MatrixCodeType is 3x3 because we have created a 3x3 marker before using the online tool  -->
     <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false; patternRatio: 0.75">
 
-        <a-assets>
-            <video id="superunion_video" autoplay loop="true" src="https://culleyyo.github.io/img/Superunion_Work.mp4"></video>
-          </a-assets>
          
          <!-- Defines the barcode marker that we are going to use. We have just to specify its code, that in this case is 2 -->
          <a-marker type="pattern" preset="custom" url="https://culleyyo.github.io/img/pattern-su_marker.patt">
 
-            <a-video src="#superunion_video" width="16" height="9" position="0 0 -20"></a-video>
+        <a-image rotation="-90 0 0" src="https://culleyyo.github.io/img/still.png"></a-image>
 
          </a-marker>
          
