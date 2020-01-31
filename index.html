@@ -4,9 +4,9 @@
    
     <!-- Initialize the viewport -->
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <!-- Load the required dependencies: A-frame and AR.js -->
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
-    
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
    
     <!-- This is a hack because at the time of writing there are some distortions in the provided visuals until the  -->
@@ -36,7 +36,7 @@
          <!-- Defines the barcode marker that we are going to use. We have just to specify its code, that in this case is 2 -->
          <a-marker type="pattern" preset="custom" url="https://culleyyo.github.io/img/pattern-su_marker.patt">
 
-        <a-image rotation="-90 0 0" src="https://culleyyo.github.io/img/still.png"></a-image>
+            <a-video src="https://culleyyo.github.io/img/Superunion_Work.mp4"  width="3" height="1.5" webkit-playsinline playsinline></a-video>
 
          </a-marker>
          
