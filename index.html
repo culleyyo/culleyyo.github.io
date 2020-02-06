@@ -34,7 +34,7 @@
 
          
          <!-- Defines the barcode marker that we are going to use. We have just to specify its code, that in this case is 2 -->
-         <a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'></a-scene>
+         <a-scene arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;"></a-scene>
 
          <a-marker type='barcode' value='5'></a-marker>
 
