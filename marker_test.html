@@ -34,9 +34,7 @@
 
          
          <!-- Defines the barcode marker that we are going to use. We have just to specify its code, that in this case is 2 -->
-         <a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'></a-scene>
-
-         <a-marker type='barcode' value='5'></a-marker>
+         <a-marker type="pattern" preset="custom" url="https://culleyyo.github.io/img/pattern-su_marker.patt">
 
             <a-text rotation="-90 0 0" position="0 0 -1.25" align="center" value="114 5th avenue 17th floor"></a-text>
             <a-text rotation="-90 0 0" position="0 0 -1" align="center" value="New York New York"></a-text>
